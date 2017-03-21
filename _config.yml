@@ -1,5 +1,9 @@
-# Build settings
+# Site settings
+title: Artists Theme
+email: artist@email
+description: "Thinker // Designer // YouTuber"
 
+# Build settings
 markdown: kramdown
 permalink: pretty
 

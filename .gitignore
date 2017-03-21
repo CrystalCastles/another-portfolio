@@ -1,3 +1,6 @@
+_site/
+.jekyll-metadata
+
 ### OSX ###
 .DS_Store
 .AppleDouble
@@ -25,7 +28,3 @@ Temporary Items
 
 ### Sass ###
 .sass-cache
-
-_site/
-.sass-cache/
-.jekyll-metadata
