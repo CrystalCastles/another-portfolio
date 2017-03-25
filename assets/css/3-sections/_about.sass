@@ -1,23 +1,16 @@
-h3
-  @extend %small-bold
-  color: $accent-light-color
-  text-align: center
-  padding: 100px 0 30px
-
 .face-lockup
   max-width: 780px
   +display(flex)
   margin: 0 auto
   +align-items(center)
-  +justify-content(space-around)
+  +justify-content(space-between)
 
   .face-img
     border-radius: 50%
     background-size: cover
     background-position: center
     +size(200px)
-    background: url(/assets/img/face.jpg)
-    order: 3
+    +order(3)
   
   [class^="icon-"]
     +size(100px)
@@ -28,13 +21,13 @@ h3
       fill: $accent-color
     
     &.icon-pencil
-      order: 1
+      +order(1)
     &.icon-mouse
-      order: 2
+      +order(2)
     &.icon-browser
-      order: 4
+      +order(4)
     &.icon-video
-      order: 5
+      +order(5)
 
 @media screen and (max-width: 650px)
   .face-lockup
