@@ -1,0 +1,46 @@
+# Site settings
+title: Artists Theme
+description: "Thinker // Designer // YouTuber"
+email: artist@email
+
+#MENU ITEM LIST
+menu:
+- {name: About Me, url: '#about-me'}
+- {name: Work, url: '#work'}
+- {name: Clients, url: '#clients'}
+- {name: Contact, url: '#contact'}
+
+#SKILL LIST
+skills:
+- {name: Communication, value: '9'}
+- {name: Organization, value: '7'}
+- {name: Learning, value: '10'}
+- {name: Teaching, value: '6'}
+- {name: Planning, value: '7'}
+- {name: Visual Design, value: '5'}
+- {name: UX Design, value: '8'}
+- {name: Programming, value: '6'}
+
+# Work Section
+projects:
+- {name: Typo International, folder: 'proj-1'}
+- {name: American Apparel, folder: 'proj-2'}
+- {name: Crisp Icons, folder: 'proj-3'}
+- {name: Typo International, folder: 'proj-4'}
+- {name: Typo International, folder: 'proj-5'}
+- {name: Typo International, folder: 'proj-6'}
+- {name: Typo International, folder: 'proj-7'}
+- {name: Typo International, folder: 'proj-8'}
+
+# Images and content
+bg-img: "hero-bg.jpg"
+logo: "logo.svg"
+avatar: "face.jpg"
+blurb: <p><strong>
+      Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit, sed do eiusmod 
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
