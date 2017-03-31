@@ -1,48 +1,103 @@
 .alt-section
   background: $bg-color
+
+.section-work
+  overflow-x: hidden
+  
+.work-belt
+  width: 200%
+  position: relative
+  left: 0%
+  +transition(all 800ms)
+  
+.thumb-wrap, .work-wrap
+  width: 50%
+  float: left
   
 .thumb-container
   max-width: 960px
   margin: 0px auto
-  padding-bottom: 100px
+
   +clearfix
 
-.thumb-unit
-  width: 25%
-  display: block
-  float: left
+  .thumb-unit
+    width: 25%
+    display: block
+    float: left
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    cursor: pointer
+    background:
+      position: center center
+      repeat: no
+      size: cover
+    
+    
+    @media screen and (max-width: 760px)
+      width: 50%
+      padding-top: 26%
+    
+    .thumb-overlay
+      +position(absolute, 100% 0px null 0px)
+      height: 100%
+      background: fade-out($accent-color, 0.1)
+      text-align: center
+      +transition
+      +display(flex)
+      +align-items(center)
+      +justify-content(space-around)
+      
+      strong
+        display: block
+        padding: 0 20px
+        color: white
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 24px
+        line-height: 1.2
+      
+    &:hover .thumb-overlay
+      top: 0%
+
+.work-container
+  max-width: 600px
+  margin: 0px auto
   position: relative
-  padding-top: 16%
-  overflow: hidden
+  display: none
   
-  @media screen and (max-width: 760px)
-    width: 50%
-    padding-top: 26%
-  
-  background:
-    //image: url(/assets/img/work/proj-1/thumb.jpg)
-    position: center center
-    repeat: no
-    size: cover
-  
-  .thumb-overlay
-    +position(absolute, 100% 0px null 0px)
-    height: 100%
-    background: fade-out($accent-color, 0.1)
-    text-align: center
-    +transition
-    +display(flex)
-    +align-items(center)
-    +justify-content(space-around)
+  .work-return
+    height: 40px
+    width: 40px
+    cursor: pointer
+    font-weight: 600
+    text-transform: uppercase
+    +position(absolute, -4px null null -60px)
     
-    strong
-      display: block
-      padding: 0 20px
-      color: white
-      font-weight: 300
-      text-transform: uppercase
-      font-size: 24px
-      line-height: 1.2
+    &:hover
+      opacity: 0.5
     
-  &:hover .thumb-overlay
-    +position(absolute, 0% 0px null 0px)
+    path
+      fill: rgba(0,0,0,0.5)
+  
+  h4
+    color: $accent-color
+    font-weight: 300
+    text-transform: uppercase
+    font-size: 24px
+    line-height: 1.2
+    margin: 0 0 20px
+    
+  img
+    max-width: 100%
+    margin-bottom: 20px
+    
+  
+
+@media (max-width:740px)
+  .work-container
+    .work-return
+      left: 0px
+    
+    h4
+      margin-left: 60px
