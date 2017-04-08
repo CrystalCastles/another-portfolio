@@ -55,3 +55,15 @@ blurb: <p><strong>
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
       non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
+
+# Contact Section
+
+social:
+- {icon: 'twitter', link: 'http://twitter.com/'}
+- {icon: 'dribbble', link: 'https://dribbble.com/'}
+- {icon: 'behance', link: 'https://www.behance.net/'}
+- {icon: 'youtube', link: 'https://www.youtube.com/'}
+- {icon: 'linkedin', link: 'http://www.linkedin.com/'}
+
+
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
