@@ -1,8 +1,8 @@
 header
   @extend %bg-img
-  height: 450px
-  background-position: 50% 50%
-  background-image: url(/assets/img/#{$hero-path})
+  background-position: 30px 20px, 50% 50%
+  background-image: url(../img/#{$logo-path}), url(../img/#{$hero-path})
+  padding-bottom: 50px
   
   .logo
     +size(50px)
@@ -14,17 +14,17 @@ header
   
   nav
     float: right
-    margin: 30px 30px 0 0
+    padding: 30px 30px 0 0
     
     a
       display: inline-block
       margin-left: 20px
       
-      color: rgba(0,0,0,0.7)
+      color: rgba(255,255,255,1)
       @extend %small-bold
       
       &:hover
-        color: rgba(0,0,0,1)
+        color: rgba(255,255,255,0.7)
     
   h1
     text-align: center
@@ -49,3 +49,17 @@ header
     letter-spacing: 0.05em
     color: white
     line-height: 1
+    
+@media (max-width: 640px)
+  header
+    background:
+      position: 30px 20px, 50% 50%
+      
+    nav
+      float: none
+      text-align: center
+      padding-top: 90px
+    
+    h1
+      padding-top: 0px
+    
